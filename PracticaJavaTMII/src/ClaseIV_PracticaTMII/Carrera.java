@@ -83,7 +83,7 @@ public class Carrera implements Ganador{
 
     private int buscarPorPatente(String unaPatente){
         for (int i = 0; i < listaDeVehiculos.size(); i++) {
-            if (unaPatente == listaDeVehiculos.get(i).getPatente()){
+            if (unaPatente.compareTo(listaDeVehiculos.get(i).getPatente())==0){
                 return i;
             }
         }
@@ -126,4 +126,6 @@ public class Carrera implements Ganador{
         int motoDañada = buscarPorPatente(patente);
         motoS.socorrerMoto((Motos) listaDeVehiculos.get(motoDañada));
     }
+
+
 }
