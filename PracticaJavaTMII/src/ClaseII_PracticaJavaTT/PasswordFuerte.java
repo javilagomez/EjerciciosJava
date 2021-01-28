@@ -1,8 +1,9 @@
 package ClaseII_PracticaJavaTT;
 
+import java.io.IOException;
+
 public class PasswordFuerte extends Password{
-    @Override
-    public void setValue(String pwd) {
-        System.out.println("sdfwer");;
+    public PasswordFuerte() {
+        super("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-_+=()]).{8,20}$");
     }
 }
