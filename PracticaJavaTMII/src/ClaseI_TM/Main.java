@@ -3,25 +3,25 @@ package ClaseI_IntroduccionJavaTM;
 import java.util.Scanner;
 
 public class Main {
-    public static boolean esPar(int n){
+    public static boolean isEven(int n){
         return n%2==0;
     }
 
-    public static boolean esMultiplo(int numeros, int m){
-        return numeros%m==0;
+    public static boolean isMultiple(int number, int m){
+        return number%m==0;
     }
 
-    public static boolean esPrimo(int n){
-        int contador = 2;
-        boolean primo = true;
+    public static boolean isPrime(int n){
+        int counter = 2;
+        boolean prime = true;
 
-        while((primo) && (contador!=n)){
-            if(n%contador == 0){
-                primo = false;
+        while((prime) && (counter!=n)){
+            if(n%counter == 0){
+                prime = false;
             }
-            contador++;
+            counter++;
         }
-        return primo;
+        return prime;
     }
 
     public static void main(String[] args) {
@@ -32,14 +32,14 @@ public class Main {
         /*System.out.print("Ingresa un número: ");
         int n = scan.nextInt();
 
-        int contador = 0;
-        int numeros = 1;
-        while(contador<n){
-            if(esPar(numeros)){
-                System.out.println(numeros);
-                contador++;
+        int counter = 0;
+        int number = 1;
+        while(counter<n){
+            if(isEven(number)){
+                System.out.println(number);
+                counter++;
             }
-            numeros++;
+            number++;
         }*/
 
         // EJERCICIO 2
@@ -48,21 +48,21 @@ public class Main {
         System.out.println("Ingresar número m: ");
         int m = scan.nextInt();
 
-        int contador = 0;
-        int numeros = 1;
-        while(contador<n){
-            if(esMultiplo(numeros,m)){
-                System.out.println(numeros);
-                contador++;
+        int counter = 0;
+        int number = 1;
+        while(counter<n){
+            if(isMultiple(number,m)){
+                System.out.println(number);
+                counter++;
             }
-            numeros++;
+            number++;
         }*/
 
         // EJERCICIO 3
         /*System.out.print("Ingresar número n: ");
         int n = scan.nextInt();
 
-        if(esPrimo(n)==true){
+        if(isPrime(n)==true){
             System.out.println(n+" es primo");
         }else {
             System.out.println(n+" no es primo");
@@ -72,41 +72,41 @@ public class Main {
         /*System.out.print("Ingresar número n: ");
         int n = scan.nextInt();
 
-        int contador = 0;
-        int numeros = 2;
-        while(contador<n){
-            if(esPrimo(numeros)){
-                System.out.println(numeros);
-                contador++;
+        int counter = 0;
+        int number = 2;
+        while(counter<n){
+            if(isPrime(number)){
+                System.out.println(number);
+                counter++;
             }
-            numeros++;
+            number++;
         }*/
 
         // EJERCICIO 5
-        System.out.print("Ingresar la cantidad m que se repite el dígito d: ");
+        /*System.out.print("Ingresar la cantidad m que se repite el dígito d: ");
         int m = scan.nextInt();
         System.out.print("Ingresar el d dígito: ");
         int d = scan.next().charAt(0);
         System.out.print("Ingresar la cantidad n de números: ");
         int n = scan.nextInt();
 
-        int contador = 0;
+        int counter = 0;
         int countNum = 0;
-        int numero = 0;
+        int number = 0;
         while (countNum < n){
-            String numString = String.valueOf(numero);
+            String numString = String.valueOf(number);
             for (int i = 0; i < numString.length(); i++) {
                 if (numString.charAt(i) == d){
-                    contador++;
+                    counter++;
                 }
-                if (contador >= m) {
-                    System.out.print(numero+" ");
-                    contador = 0;
+                if (counter >= m) {
+                    System.out.print(number+" ");
+                    counter = 0;
                     countNum++;
                 }
             }
-            contador = 0;
-            numero++;
-        }
+            counter = 0;
+            number++;
+        }*/
     }
 }
